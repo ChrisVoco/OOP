@@ -10,7 +10,7 @@ class Photocopier(Printer, Scanner):
     def scan(self, document):
         print(f"Scanning: {document}")
 
-class MultiFunctionMachine:
+class MultiFunctionMachine(Printer, Scanner):
     def __init__(self, printer: Printer, scanner: Scanner):
         self.printer = printer
         self.scanner = scanner
